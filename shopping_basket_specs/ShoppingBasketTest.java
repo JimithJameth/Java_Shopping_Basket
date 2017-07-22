@@ -31,7 +31,7 @@ public class ShoppingBasketTest {
   }
 
   @Test
-  public void emptyBasket(){
+  public void testEmptyBasket(){
     shoppingbasket.addToShoppingBasket(item1);
     shoppingbasket.addToShoppingBasket(item2);
     shoppingbasket.addToShoppingBasket(item3);
@@ -39,4 +39,6 @@ public class ShoppingBasketTest {
     assertEquals(0, shoppingbasket.itemCount());
 
   }
+
+   
 }
