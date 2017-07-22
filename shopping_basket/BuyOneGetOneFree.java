@@ -12,12 +12,12 @@ public class BuyOneGetOneFree{
   }
 
   public void addBuyOneGetOneFree(){
-    double total = shoppingBasket.getShoppingBaskettotal();
+    double total = shoppingbasket.getShoppingBasketTotal();
     double price = item.getPrice();
 
-    int numberOfItems = shoppingbasket.countItems
-    int discountedAmount = numberOfItems / 2;
+    int numberOfBasketItems = shoppingbasket.countItem(this.item);
+    int discountedAmount = numberOfBasketItems / 2;
     total -=(discountedAmount * price);
-    shoppingbasket.updateTotal(total);
+    shoppingbasket.updateBasketTotal(total);
   }
 }
