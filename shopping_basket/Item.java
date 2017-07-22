@@ -23,7 +23,7 @@ public class Item {
   }
 
   public double setPrice(){
-    this.price = price;
+    return this.price = price;
   }
   public double getPrice(){
     return this.price;

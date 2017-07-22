@@ -41,6 +41,16 @@ public class ShoppingBasket{
     return numberOfBasketItems;
   }
 
+  public int countItem(Item countedItem){
+    int counter = 0;
+    for (Item item : items) {
+      if (countedItem.getName() == item.getName()){
+        counter +=1;
+      }
+    }
+    return counter;
+  }
+
   public double getShoppingBasketTotal(){
     double total = 0;
     for (Item item : items){
