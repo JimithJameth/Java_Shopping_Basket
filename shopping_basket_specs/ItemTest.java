@@ -10,11 +10,16 @@ public class ItemTest {
   public void before(){
 
     item1 = new Item ("eggs",1.99, Type.FRESHFOOD);
-    
+
   }
 
   @Test
   public void testItemHasName(){
     assertEquals("eggs", item1.getName());
+  }
+
+  @Test
+  public void testItemHasPrice(){
+    assertEquals(1.99, item1.getPrice(),.01);
   }
 }
