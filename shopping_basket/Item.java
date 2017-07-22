@@ -6,27 +6,27 @@ public class Item {
   private Double price;
   private Type type;
 
-public Item(String name, Double price, Type type){
+  public Item(String name, Double price, Type type){
 
-  this.name = name;
-  this.price = price;
-  this.type = type;
-}
+    this.name = name;
+    this.price = price;
+    this.type = type;
+  }
 
-public String getName(){
-  return this.name;
-}
+  public String getName(){
+    return this.name;
+  }
 
-public Type getType(){
-  return this.type;
-}
+  public Type getType(){
+    return this.type;
+  }
 
-public void setPrice(double price){
-  this.price = price;
-}
+  public void setPrice(double price){
+    this.price = price;
+  }
 
-public double getPrice(){
-  return this.price;
-}
+  public double getPrice(){
+    return this.price;
+  }
 
 }

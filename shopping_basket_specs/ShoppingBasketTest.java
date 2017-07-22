@@ -54,5 +54,5 @@ public class ShoppingBasketTest {
     shoppingbasket.updateBasketTotal(25.99);
     assertEquals(25.99, shoppingbasket.getTotal(),.01);
   }
-   
+  
 }
