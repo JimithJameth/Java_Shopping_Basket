@@ -27,4 +27,6 @@ public class ItemTest {
   public void testItemHasType(){
     assertEquals(Type.FRESHFOOD,item1.getType());
   }
+
+  
 }

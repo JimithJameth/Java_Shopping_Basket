@@ -1,6 +1,7 @@
 package shopping_basket;
 
 
+
 public class Item {
   private String name;
   private Double price;
@@ -21,12 +22,11 @@ public class Item {
     return this.type;
   }
 
-  public void setPrice(double price){
+  public double setPrice(){
     this.price = price;
   }
-
   public double getPrice(){
     return this.price;
   }
-  
+
 }
