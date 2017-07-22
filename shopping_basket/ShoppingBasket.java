@@ -35,12 +35,16 @@ public class ShoppingBasket{
     for (Item item : items){
       total += item.getPrice();
   }
-  this.updateTotal(total);
+  this.updateBasketTotal(total);
   return total;
 }
 
-  public void updateTotal(double newTotal){
+  public void updateBasketTotal(double newTotal){
     this.total = newTotal;
+  }
+
+  public double getTotal(){
+    return this.total;
   }
 
 }

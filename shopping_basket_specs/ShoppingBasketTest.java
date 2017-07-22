@@ -48,5 +48,11 @@ public class ShoppingBasketTest {
     assertEquals(38.98, shoppingbasket.getShoppingBasketTotal(),.01);
 
   }
+
+  @Test
+  public void testUpdateShoppingBasketTotal(){
+    shoppingbasket.updateBasketTotal(25.99);
+    assertEquals(25.99, shoppingbasket.getTotal(),.01);
+  }
    
 }
