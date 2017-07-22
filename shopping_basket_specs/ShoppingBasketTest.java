@@ -60,4 +60,4 @@ public class ShoppingBasketTest {
     shoppingbasket.addToShoppingBasket(item3);
     assertEquals(1, shoppingbasket.countNumberOfBasketItems("Sony headphones"));
   }
- }
+}
