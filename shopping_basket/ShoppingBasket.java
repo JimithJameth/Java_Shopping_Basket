@@ -30,6 +30,16 @@ public class ShoppingBasket{
     return this.items.size();
   }
 
+  public int countNumberOfBasketItems(String itemName){
+    int numberOfBasketItems = 0;
+    for (Item item : items){
+      if (item.getName() == itemName){
+        numberOfBasketItems +=1;
+      }
+    }
+    return numberOfBasketItems;
+  }
+
   public double getShoppingBasketTotal(){
     double total = 0;
     for (Item item : items){

@@ -14,7 +14,7 @@ public class ShoppingBasketTest {
     shoppingbasket = new ShoppingBasket();
     item1 = new Item("eggs", 1.99, Type.FRESHFOOD);
     item2 = new Item("1 Litre of irn-bru", 1.99, Type.DRINKS);
-    item3 = new Item("Brand new headphones", 35.00, Type. ELECTRONICS);
+    item3 = new Item("Sony headphones", 35.00, Type. ELECTRONICS);
   }
 
   @Test
@@ -54,5 +54,10 @@ public class ShoppingBasketTest {
     shoppingbasket.updateBasketTotal(25.99);
     assertEquals(25.99, shoppingbasket.getTotal(),.01);
   }
-  
-}
+
+  @Test
+  public void testCountNumberOfBasketItems(){
+    shoppingbasket.addToShoppingBasket(item3);
+    assertEquals(1, shoppingbasket.countNumberOfBasketItems("Sony headphones"));
+  }
+ }
