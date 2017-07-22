@@ -22,6 +22,10 @@ public class ShoppingBasket{
     this.items.clear();
   }
 
+  public void removeFromShoppingBasket(Item item){
+    items.remove(item);
+  }
+
   public int itemCount(){
     return this.items.size();
   }

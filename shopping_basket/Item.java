@@ -1,5 +1,5 @@
 package shopping_basket;
-import behaviours.*;
+
 
 public class Item {
   private String name;
