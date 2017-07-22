@@ -40,5 +40,13 @@ public class ShoppingBasketTest {
 
   }
 
+  @Test
+  public void testShoppingBasketTotal(){
+    shoppingbasket.addToShoppingBasket(item1);
+    shoppingbasket.addToShoppingBasket(item2);
+    shoppingbasket.addToShoppingBasket(item3);
+    assertEquals(38.98, shoppingbasket.getShoppingBasketTotal(),.01);
+
+  }
    
 }

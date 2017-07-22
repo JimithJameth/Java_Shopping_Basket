@@ -30,7 +30,17 @@ public class ShoppingBasket{
     return this.items.size();
   }
 
-  public double total(){
-    return this.total;
+  public double getShoppingBasketTotal(){
+    double total = 0;
+    for (Item item : items){
+      total += item.getPrice();
   }
+  this.updateTotal(total);
+  return total;
+}
+
+  public void updateTotal(double newTotal){
+    this.total = newTotal;
+  }
+
 }
